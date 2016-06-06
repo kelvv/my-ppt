@@ -1,0 +1,22 @@
+{
+  "name": "my-ppt",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "start": "./node_modules/.bin/nodeppt start -p 3000"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/kelvv/my-ppt.git"
+  },
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/kelvv/my-ppt/issues"
+  },
+  "homepage": "https://github.com/kelvv/my-ppt#readme",
+  "dependencies": {
+    "nodeppt": "^1.4.2"
+  }
+}
