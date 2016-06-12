@@ -1,7 +1,7 @@
 {
     "mode": "webhook",
     "url": "https://github.com/kelvv/my-ppt.git",
-    "localdir": "/root/my-ppt",
+    "localdir": "/var/www/my-ppt",
     "rules": [
         {
             "type": "tag",
