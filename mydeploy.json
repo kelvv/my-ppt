@@ -1,0 +1,15 @@
+{
+    "mode": "webhook",
+    "url": "https://github.com/kelvv/my-ppt.git",
+    "localdir": "/root/my-ppt",
+    "rules": [
+        {
+            "type": "tag",
+            "value": "*"
+        },
+        {
+            "type": "push",
+            "value": "release"
+        }
+    ]
+}
