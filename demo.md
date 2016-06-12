@@ -1,5 +1,5 @@
 title: nodeppt markdown 演示
-speaker: 三水清
+speaker:  kelvv
 url: https://github.com/ksky521/nodePPT
 transition: slide3
 files: /js/demo.js,/css/demo.css,/js/zoom.js
