@@ -1,5 +1,5 @@
 title: nodeppt markdown 演示
-speaker:  kelvv
+speaker:  kelvv deploy
 url: https://github.com/ksky521/nodePPT
 transition: slide3
 files: /js/demo.js,/css/demo.css,/js/zoom.js
