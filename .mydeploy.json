@@ -5,7 +5,9 @@
     "interval": 3100,
     "branch": "master",
     "rules": [
-        "type": "commit",
-        "value": "[\\s\\S]+"
+        {
+            "type" : "commit",
+            "value" : "[\\s\\S]+"
+        }
     ]
 }
