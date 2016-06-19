@@ -2,7 +2,7 @@
     "mode": "pullwatch",
     "url": "https://github.com/kelvv/my-ppt",
     "localdir": "/var/www/my-ppt",
-    "interval": 3000,
+    "interval": 3100,
     "branch": "master",
     "rules": [
     ]
