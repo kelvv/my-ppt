@@ -1,0 +1,9 @@
+{
+    "mode": "pullwatch",
+    "url": "https://github.com/kelvv/my-ppt",
+    "localdir": "/var/www/my-ppt",
+    "interval": 3000,
+    "branch": "master",
+    "rules": [
+    ]
+}

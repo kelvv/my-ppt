@@ -1,5 +1,10 @@
+<<<<<<< HEAD
 title: nodeppt markdown 演示 
 speaker:  kelvv
+=======
+title: nodeppt markdown 演示
+speaker:  kelvv deploy
+>>>>>>> 35569d1281a57200c8f9f8ea40ee79b57b3e27ad
 url: https://github.com/ksky521/nodePPT
 transition: slide3
 files: /js/demo.js,/css/demo.css,/js/zoom.js
