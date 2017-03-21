@@ -1,6 +1,6 @@
 <<<<<<< HEAD
 title: nodeppt markdown 演示 
-speaker:  kelvv
+speaker:  kelvv Hello
 =======
 title: nodeppt markdown 演示
 speaker:  kelvv deploy
@@ -30,7 +30,7 @@ usemathjax: yes
 
 
 [slide]
-# 基本语法和样式演示
+# 基本语法和样式演示123
 
 [slide]
 
