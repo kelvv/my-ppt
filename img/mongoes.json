@@ -1,0 +1,73 @@
+{
+  "controls": {
+      "mongodbReadCapacity": 10000,
+      "elasticsearchBulkSize": 300
+    },
+    "mongodb": {
+      "url": "mongodb://user:password@localhost:27017/db?replicaSet=rs1",
+      "options": {
+        "authSource": "staging-affiliates",
+        "readPreference": "secondaryPreferred"
+      }
+    },
+    "elasticsearch": {
+      "options": {
+        "host": "http://localhost:9200",
+        "apiVersion": "5.2"
+      },
+      "indices": [
+        {
+          "index": "like",
+          "body": {
+            "settings": {
+              "index": {
+                "number_of_shards": 3,
+                "number_of_replicas": 1,
+                "mapper.dynamic": true
+              }
+            }
+          }
+        }
+      ]
+    },
+    "tasks": [
+      {
+        "from": {
+          "phase": "scan",
+          "id":"592e3f3b436bfeea62d3c5d8"
+        },
+        "extract": {
+          "db": "staging-affiliates",
+          "collection": "Like",
+          "query": {},
+          "projection": {
+            "createdAt" : 1,
+            "modifiedAt" : 1,
+            "targetId" : 1,
+            "type" : 1,
+            "userId" : 1,
+            "isDeleted" : 1
+          }
+        },
+        "transform": {
+          "mapping": {
+            "createdAt" : "createdAt",
+            "modifiedAt" : "modifiedAt",
+            "targetId" : "targetId",
+            "type" : "type",
+            "userId" : "userId",
+            "isDeleted" : "isDeleted"
+          }
+        },
+        "load": {
+          "index": "like",
+          "type": "like",
+          "body": {
+            "dynamic": true,
+            "properties": {
+            }
+          }
+        }
+      }
+    ]
+  }
